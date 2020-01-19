@@ -1,0 +1,48 @@
+
+@media only screen and (max-width: 600px) {
+    section.floor-plan, section.title-subnote {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+    .desktop-view {
+        display: none;
+    }
+    
+
+    .nav-grid {
+        display: block;
+        text-align: center;
+        
+    }
+
+    .nav-grid-item {
+        border-left: none;
+    }
+
+    .top-features {
+        display: block;
+    }
+
+    table {
+        width: 99%;
+        margin-bottom: 10px;
+    }
+
+    section.gallery-grid-container {
+        display: block;
+    }
+
+    .gallery-grid-item > img {
+        width: 54.5%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        width: 50%;
+    }
+    
+}

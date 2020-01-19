@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="apartment_layout.css">
+    <link rel="stylesheet" href="mobile.css">
+    <style>
+        @media print {
+            section.floor-plan, section.title-subnote {
+            display: none;
+            }
+
+        }
+    </style>
+    <title>Sandy and Leslie's Apartment</title>
+</head>
+<body>
+    <header>
+        <section class="page-title">
+            <h1 class="desktop-view">Sandy and Leslie's Apartment</h1>
+            <h1 class="mobile-view">Sand and Leslie's</h1>
+            <h1 class="mobile-view">Apartment</h1>
+        </section>
+        <section class="title-subnote">
+            <h4>Click a room for a detailed view</h4>
+        </section>
+        <section class="floor-plan">
+            <img src="apartmentfloorplan.jpg" alt="Apartment Floor plan" usemap="#floorplan">
+            <map name="floorplan">
+                <area shape="rect" coords="50,0,195,160" href="bedroom.html" alt="Bedroom">
+                <area shape="rect" coords="200,0,355,160" href="bedroom.html" alt="Bedroom">
+                <area shape="rect" coords="240,230,390,395" href="kitchen.html" alt="Kitchen">
+                <area shape="circle" coords="410,135,50" href="diningroom.html" alt="Dinning Room">
+                <area shape="poly" coords="405,200,475,170,530,180,545,395,425,395" href="livingroom.html" alt="Living Room">
+                <area shape="rect" coords="0,0,600,407" href="apartment.html" alt="Apartment">
+            </map>
+        </section>
+    </header>
+
+    <nav class="nav-grid">
+        <div class="nav-grid-item white-border"><a href="apartment.html">Apartment</a></div>
+        <div class="nav-grid-item"><a href="bedroom.html">Bedroom 1</a></div>
+        <div class="nav-grid-item"><a href="bedroom.html">Bedroom 2</a></div>
+        <div class="nav-grid-item"><a href="diningroom.html">Dinning Room</a></div>
+        <div class="nav-grid-item"><a href="kitchen.html">Kitchen</a></div>
+        <div class="nav-grid-item"><a href="livingroom.html">Living Room</a></div>
+    </nav>
+    <main>
+        <section class="top-features">
+            <div class="top-features-grid-item">
+                <h3>Survey</h3>
+                <p>How did you find out about this appaetment. Click all that apply:</p>
+                <form action="" method="post">
+                    <input type="checkbox" name="survey" id="survey" value="websearch">Web search
+                    <input type="checkbox" name="survey" id="survey" value="friend">Friend
+                    <input type="checkbox" name="survey" id="survey" value="newspaper">Newspaper <br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset Form">
+                </form>
+                <h3>Welcome Message</h3>
+                <audio controls>
+                    <source src="apartment.mp3" type="audio/mpeg">
+                </audio>
+                <p>Transcript: Hello, Welcome to our apartment. You'll really enjoy living here. The rooms are spacious and the apartment building amenities are fantastic. We look forward to hearing from you! </p>
+            </div>
+            <div class="top-features-grid-item">
+                <h3>Apartment Services:</h3>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Day/Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Gym</td>
+                        <td rowspan="2">
+                            Monday-Friday: 6am-10pm <br>
+                            Saturday: 8am-8pm <br>
+                            Sunday: 8am-5pm
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pool</td>
+                    </tr>
+                    <tr>
+                        <td>Laundry</td>
+                        <td>24/7</td>
+                    </tr>
+                    <tr class="caution">
+                        <td colspan="2">Please do not allow people you do not know use thse facilities</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="top-features-grid-item">
+                <h3>Location</h3>
+                <img src="location.png" alt="Location of apartment">
+            </div>
+        </section>
+        <section class="gallery">
+            <h3>Gallery</h3>
+            <section class="gallery-grid-container">
+                <div class="gallery-grid-item">
+                    <h5>Balcony</h5>
+                    <img src="balcony.jpg" alt="Balcony" width="100%" >
+                </div>
+                <div class="gallery-grid-item">
+                    <h5>Bathroom</h5>
+                    <img src="bathroom_sm.jpg" alt="Bathroom" height="200px">
+                </div>
+                <div class="gallery-grid-item">
+                    <h5>Bedroom</h5>
+                    <img src="bedroom_lg.jpg" alt="Bedroom" width="100%" >
+                </div>
+                <div class="gallery-grid-item">
+                    <h5>Dinning Room</h5>
+                    <img src="diningroom_lg.jpg" alt="Dinning Room" width="100%" >
+                </div>
+                <div class="gallery-grid-item">
+                    <h5>Kitchen</h5>
+                    <img src="kitchen_lg.jpg" alt="" width="100%" >
+                </div>
+                <div class="gallery-grid-item">
+                    <h5>Living Room</h5>
+                    <img src="livingroom_lg.jpg" alt="Living Room" width="100%">
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <h4>For more information contact: <a href="#">apartment@example.com</a></h4>
+        <h4>&copy; <a href="mojeedkush.github.io/my_portfolio/index.html">MOJEED KUSIMO</a></h4>
+    </footer>
+</body>
+</html>

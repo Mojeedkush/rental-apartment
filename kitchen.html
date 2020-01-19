@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="apartment_layout.css">
+    <style>
+        section.kitchen {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        footer {
+            text-align: left;
+            margin-top: 10px;
+            padding-left: 5px
+        }
+    </style>
+    <title>Sandy and Leslie's Apartment</title>
+</head>
+<body>
+    <header>
+        <section class="page-title">
+            <h1>Sandy and Leslie's Apartment</h1>
+        </section>
+        <section class="title-subnote">
+            <h4>Click a room for a detailed view</h4>
+        </section>
+        <section class="floor-plan">
+            <img src="apartmentfloorplan.jpg" alt="Apartment Floor plan" usemap="#floorplan">
+            <map name="floorplan">
+                <area shape="rect" coords="50,0,195,160" href="bedroom.html" alt="Bedroom">
+                <area shape="rect" coords="200,0,355,160" href="bedroom.html" alt="Bedroom">
+                <area shape="rect" coords="240,230,390,395" href="kitchen.html" alt="Kitchen">
+                <area shape="circle" coords="410,135,50" href="diningroom.html" alt="Dinning Room">
+                <area shape="poly" coords="405,200,475,170,530,180,545,395,425,395" href="livingroom.html" alt="Living Room">
+                <area shape="rect" coords="0,0,600,407" href="apartment.html" alt="Apartment">
+        </section>
+    </header>
+
+    <nav class="nav-grid">
+        <div class="nav-grid-item white-border"><a href="apartment.html">Apartment</a></div>
+        <div class="nav-grid-item"><a href="bedroom.html">Bedroom 1</a></div>
+        <div class="nav-grid-item"><a href="bedroom.html">Bedroom 2</a></div>
+        <div class="nav-grid-item"><a href="diningroom.html">Dinning Room</a></div>
+        <div class="nav-grid-item"><a href="kitchen.html">Kitchen</a></div>
+        <div class="nav-grid-item"><a href="livingroom.html">Living Room</a></div>
+    </nav>
+    <main>
+        <section class="kitchen">
+            <h3>Kitchen Detail</h3>
+                <img src="kitchen_lg.jpg" alt="Bedroom" width="600" height="407">
+        </section>
+        <section>
+                <div>
+                    <h3>Apartment Services:</h3>
+                    <table>
+                        <tr>
+                            <th>Service</th>
+                            <th>Day/Hours</th>
+                        </tr>
+                        <tr>
+                            <td>Gym</td>
+                            <td rowspan="2">
+                                Monday-Friday: 6am-10pm <br>
+                                Saturday: 8am-8pm <br>
+                                Sunday: 8am-5pm
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pool</td>
+                        </tr>
+                        <tr>
+                            <td>Laundry</td>
+                            <td>24/7</td>
+                        </tr>
+                        <tr class="caution">
+                            <td colspan="2">Please do not allow people you do not know use thse facilities</td>
+                        </tr>
+                    </table>
+                </div>
+            <section>
+    </main>
+
+    <footer>
+        <h4>For more information contact: <a href="#">apartment@example.com</a></h4>
+        <h4>&copy; <a href="mojeedkush.github.io/my_portfolio/index.html">MOJEED KUSIMO</a></h4>
+    </footer>
+</body>
+</html>
